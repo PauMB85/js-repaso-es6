@@ -66,3 +66,15 @@ console.log(metallica);
 //ES6
 const metallicaES6 = {banda, genero, canciones};
 console.log(metallicaES6);
+
+//Agregar funciones a un objeto
+const persona3 = {
+    nombre: 'juan',
+    edad: 20,
+    mostrarInfo() {
+        const texto = `${this.nombre} tiene una edad de ${this.edad}`;
+        console.log(texto);
+    }
+};
+
+persona3.mostrarInfo();
