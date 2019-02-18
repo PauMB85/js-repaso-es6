@@ -37,7 +37,7 @@ Persona.prototype.mostrarInformacionPersona = function() {
 const infoPersona = persona2.mostrarInformacionPersona();
 console.log(infoPersona);
 
-//Destructuring - forms nuevo de acceder a los atributos del objeto
+//Destructuring - nueva forma de acceder a los atributos del objeto
 const myObjeto = {
     version: {
         nueva: 'ES6',
@@ -47,5 +47,22 @@ const myObjeto = {
 //forma antinugua
 let versionNueva = myObjeto.version.nueva;
 console.log(versionNueva);
+//ES6
 let {nueva} = myObjeto.version;
 console.log(nueva);
+
+//Enhacement - coloca los objetos
+const banda = 'Metallica';
+const genero = 'Heavy';
+const canciones = ['Master of puppets','one','Enter Sandman'];
+
+//forma antigua (object literal)
+const metallica = {
+    banda: banda,
+    genero: genero,
+    canciones: canciones
+}
+console.log(metallica);
+//ES6
+const metallicaES6 = {banda, genero, canciones};
+console.log(metallicaES6);
