@@ -1,6 +1,6 @@
 //OOP
 
-class Tarea {
+export class Tarea {
     constructor(nombre, prioridad) {
         this.nombre = nombre;
         this.prioridad = prioridad;
@@ -28,11 +28,11 @@ class ComprasPendientes extends Tarea {
 
 //crear 1 tarea
 let tarea1 = new Tarea('ejemplo', 'alta');
-console.log(tarea1);
-console.log(tarea1.mostrarPrioridad());
+//console.log(tarea1);
+//console.log(tarea1.mostrarPrioridad());
 
 
 //compras
 let comprar1 = new ComprasPendientes('manzanas','baja',5);
-console.log(comprar1);
-console.log(comprar1.mostrarPrioridad());
+//console.log(comprar1);
+//console.log(comprar1.mostrarPrioridad());
